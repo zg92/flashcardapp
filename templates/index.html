@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet"> 
+    <title>PostIT</title>
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="nav-links">
+                {% if request.path == "/" %}
+                <div id="reset-link"><a href='#reset'> Reset </a></div>
+                <div id="settings-link"><a href='#settings'> Settings </a></div>
+                <div id="collection-link"><a href="#collections"> Collections </a></div>
+                <div id="upload-link"><a href="{{url_for('upload') }}"> Upload </a></div>
+                {% else %}
+                <div id="home-link"><a href="{{url_for('home') }}"> Home </a></div>
+                {% endif %}
+
+            </div>
+        </div>
+    </nav>
+    
+        <div id="settings-submenu-links">
+                <img class='settings-submenu-exit' src="/static/exit.png" alt="X">
+            <div class="template-selector">
+                <h3>Post-It Templates</h3>
+                <div style="color: pink;" class="postit-color-pink">Pink</div>
+                <div style="color:skyblue;" class="postit-color-blue">Blue</div>
+                <div style="color: yellow;" class="postit-color-yellow">Yellow</div>
+            </div>
+        </div>
+
+        <div id="collections-submenu-links">
+            <img class='collections-submenu-exit' src="/static/exit.png" alt="X">
+        <div class="collection-selector">
+            <h3>Available Collections</h3>
+            {% for set_name in all_sets %}
+            <div class="collection-sets"><a href='{{ url_for("home",active=true, set=set_name) }}'>{{set_name}}</a></div>
+            {% endfor %}
+            <form method="POST">
+            <input type="submit" value="Delete All" name="delete" class="delete-button">
+            </form> 
+        </div>
+    </div>
+        
+    {% block content %}
+    <div class="postit">
+        <img class="postit-img" src="static/yellow_postit.png">
+        <div class="postit-text">Click Next To Begin</div>
+        <div class="flip-postit"><a href='#X'>Show Answer</a></div>
+        <div class="next-postit"><img src="/static/arrow.png"></div>
+        <div class="previous-postit"><img src="/static/arrow.png"></div>
+    </div>
+    <div class="answer-box-wrapper">
+        <div class="answer-box"></div>
+    </div>
+    <script type=text/javascript> const flaskData = {{ post_its|tojson }} </script>
+    <script src='/static/main_app.js'></script>
+    {% endblock %}
+</body>
+
+</html>

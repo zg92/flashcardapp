@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="upload-wrapper">
+    <form action="{{ url_for('upload') }}" method="post">
+        <textarea class="upload-name" name='title'></textarea>
+        <textarea class="upload-text" name='text'
+            placeholder="Enter csv format data with column headers of 'front' and 'back' to denote what should be displayed on the front of the post it or the back (the answer). Do not enter commas within the row values as it will confuse the system. Once data is entered, select 'Upload Text' to save."></textarea>
+        <label class="upload-title-button">Enter Title:</label>
+        <input type="submit" class="upload-button" value="Upload Text">
+</div>
+</form>
+</div>
+
+
+
+{% endblock %}
