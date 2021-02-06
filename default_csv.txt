@@ -1,0 +1,51 @@
+front,back
+What is the capitol of Alabama?,The capitol is Montgomery
+What is the capitol of Alaska?,The capitol is Juneau
+What is the capitol of Arizona?,The capitol is Phoenix
+What is the capitol of Arkansas?,The capitol is Little Rock
+What is the capitol of California?,The capitol is Sacramento
+What is the capitol of Colorado?,The capitol is Denver
+What is the capitol of Connecticut?,The capitol is Hartford
+What is the capitol of Delaware?,The capitol is Dover
+What is the capitol of Florida?,The capitol is Tallahassee
+What is the capitol of Georgia?,The capitol is Atlanta
+What is the capitol of Hawaii?,The capitol is Honolulu
+What is the capitol of Idaho?,The capitol is Boise
+What is the capitol of Illinois?,The capitol is Springfield
+What is the capitol of Indiana?,The capitol is Indianapolis
+What is the capitol of Iowa?,The capitol is Des Moines
+What is the capitol of Kansas?,The capitol is Topeka
+What is the capitol of Kentucky?,The capitol is Frankfort
+What is the capitol of Louisiana?,The capitol is Baton Rouge
+What is the capitol of Maine?,The capitol is Augusta
+What is the capitol of Maryland?,The capitol is Annapolis
+What is the capitol of Massachusetts?,The capitol is Boston
+What is the capitol of Michigan?,The capitol is Lansing
+What is the capitol of Minnesota?,The capitol is Saint Paul
+What is the capitol of Mississippi?,The capitol is Jackson
+What is the capitol of Missouri?,The capitol is Jefferson City
+What is the capitol of Montana?,The capitol is Helena
+What is the capitol of Nebraska?,The capitol is Lincoln
+What is the capitol of Nevada?,The capitol is Carson City
+What is the capitol of New Hampshire?,The capitol is Concord
+What is the capitol of New Jersey?,The capitol is Trenton
+What is the capitol of New Mexico?,The capitol is Santa Fe
+What is the capitol of New York?,The capitol is Albany
+What is the capitol of North Carolina?,The capitol is Raleigh
+What is the capitol of North Dakota?,The capitol is Bismarck
+What is the capitol of Ohio?,The capitol is Columbus
+What is the capitol of Oklahoma?,The capitol is Oklahoma City
+What is the capitol of Oregon?,The capitol is Salem
+What is the capitol of Pennsylvania?,The capitol is Harrisburg
+What is the capitol of Rhode Island?,The capitol is Providence
+What is the capitol of South Carolina?,The capitol is Columbia
+What is the capitol of South Dakota?,The capitol is Pierre
+What is the capitol of Tennessee?,The capitol is Nashville
+What is the capitol of Texas?,The capitol is Austin
+What is the capitol of Utah?,The capitol is Salt Lake City
+What is the capitol of Vermont?,The capitol is Montpelier
+What is the capitol of Virginia?,The capitol is Richmond
+What is the capitol of Washington?,The capitol is Olympia
+What is the capitol of West Virginia?,The capitol is Charleston
+What is the capitol of Wisconsin?,The capitol is Madison
+What is the capitol of Wyoming?,The capitol is Cheyenne
