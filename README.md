@@ -14,4 +14,4 @@ If your set does not appear correct based on what was entered in the upload, ens
 
 Design:
 
-This app was designed to using a flask/sqlite back end with a HTML/CSS/JS front end. 
+This app was designed to using a Flask/Python back end with a HTML/CSS/JS front end. 
