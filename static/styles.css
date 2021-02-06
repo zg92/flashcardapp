@@ -1,0 +1,324 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+/* Navbar */
+
+nav {
+    height: 10vh;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links div {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.nav-links div a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+.nav-links div a:hover {
+    font-size: 2.1em;
+    color: grey;
+}
+
+/* Post It */
+
+.postit{
+    height: 300px;
+    width: 300px;
+    margin:auto;
+    margin-top: 5%;
+    position: relative;
+    display: block;
+    transform: translateX(0%);
+    transition: .3s ease-in;
+}
+
+.postit-img{
+    height: auto;
+    width: 15%;
+    min-width: 300px;
+    margin:auto;
+    top: 10%;
+    position: absolute;
+    transform: translateX(0%);
+    transition: .3s ease-in;
+}
+
+.postit.menu-move-right {
+    transform: translateX(25%);
+    transition: .3s ease-in;
+}
+
+.postit.menu-move-left {
+    transform: translateX(-25%);
+    transition: .3s ease-in;
+}
+
+.postit-text{
+    display: flex; 
+    justify-content: center; 
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.5em;
+    overflow: hidden;
+    top: 40%;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    
+}
+
+.flip-postit a{
+    font-size: 30;
+    color: black;
+    position: absolute;
+    left: 3%;
+    bottom: -2%;
+}
+
+.next-postit {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    right: -30%;
+    bottom: 30%;
+}
+
+.next-postit img {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+}
+
+.next-postit img:hover {
+    height: 55%;
+    width: 55%;
+
+}
+
+.previous-postit {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    left: -20%;
+    bottom: 30%;
+}
+
+.previous-postit img {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.previous-postit img:hover {
+    height: 55%;
+    width: 55%;
+
+}
+
+.answer-box-wrapper {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+    transform: translateX(0%);
+    transition: .3s ease-in;
+}
+
+.answer-box {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    color: white;
+}
+
+.answer-box.active {
+    font-size: 2em;
+    transition: .3s ease-in;
+}
+
+.answer-box-wrapper.menu-move-right {
+    transform: translateX(13.5%);
+    transition: .3s ease-in;
+}
+
+.answer-box-wrapper.menu-move-left {
+    transform: translateX(-13.5%);
+    transition: .3s ease-in;
+}
+
+/* Settings Submenu */
+
+#settings-submenu-links {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 25%;
+    padding-right: 2%;
+    bottom: 5%;
+    float: left;
+    position: relative;
+    transform: translateX(-150%);
+    transition: 0.3s ease-in;
+}
+
+#settings-submenu-links h3 {
+    font-size: 1.75em;
+}
+
+#settings-submenu-links div {
+    padding: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.settings-submenu-exit {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    cursor: pointer;
+}
+
+#settings-submenu-links.active {
+    transform: translateX(0%);
+}
+
+/* Collections Submenu */
+
+#collections-submenu-links{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 25%;
+    padding-right: 2%;
+    bottom: 5%;
+    float: right;
+    position: relative;
+    transform: translateX(150%);
+    transition: 0.3s ease-in;
+}
+
+#collections-submenu-links div {
+    padding: 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#collections-submenu-links h3 {
+    font-size: 1.75em;
+}
+
+#collections-submenu-links div {
+    font-size: 1.5em;   
+}
+
+#collections-submenu-links div a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+#collections-submenu-links a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1.1em;
+}
+
+.collections-submenu-exit{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 6%;
+    left: -30%;
+    cursor: pointer;
+}
+
+.delete-button{
+    height: 2em;
+    width: 75%;
+    font-size: 1.0em;
+    position: relative;
+    color: red; 
+    margin-top: 15%;
+    cursor: pointer;
+    border: grey;
+    border-style:groove;
+}
+
+#collections-submenu-links.active {
+    transform: translateX(0%);
+}
+
+/* Uploader */
+
+.upload-wrapper {
+    position: relative;
+    margin: auto;
+    top: 20px;
+    height: 30em;
+    width: 50%;
+    border-color: white;
+    border-style: dashed;
+}
+
+.upload-title-button {
+    position: absolute;
+    color: white;
+    top: 3%;
+    font-size: 1.1em;
+}
+
+.upload-name {
+    position: absolute;
+    height:1.4em;
+    width: 73%;
+    top: 2.5%;
+    resize: none;
+    left: 22%;
+}
+
+.upload-text {
+    position: absolute;
+    height:80%;
+    width: 91%;
+    top: 8%;  
+    resize: none;
+    font-size: 1.2em;
+}
+
+.upload-button {
+    position: absolute;
+    color: black;
+    padding: 8px;
+    bottom: 3%;
+    cursor: pointer;
+}
+
