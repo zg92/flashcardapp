@@ -1,8 +1,8 @@
-# flashcardapp
+# Flask Flash Card App
 
 Purpose:
 
-Interactive app that allows users to create custom flash card sets for studying. 
+Interactive app that allows users to create custom flash card sets for studying.
 
 How to Use:
 
@@ -11,3 +11,7 @@ Upon starting, the default state/capitol set will be loaded. If you would like t
 Troubleshooting:
 
 If your set does not appear correct based on what was entered in the upload, ensure there were no commas with in the columns you tried to upload (commas will confuse the csv upload). 
+
+Design:
+
+This app was designed to using a flask/sqlite back end with a HTML/CSS/JS front end. 
