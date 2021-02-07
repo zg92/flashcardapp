@@ -135,7 +135,7 @@ const showPostIt = () => {
     const settingsColorPink = document.querySelector('.postit-color-pink');
     const settingsColorBlue = document.querySelector('.postit-color-blue');
     const settingsColorYellow = document.querySelector('.postit-color-yellow');
-    const imagePostIt = document.querySelector('.postit-img')
+    const imagePostIt = document.querySelector('.postit-img');
 
     settingsColorPink.addEventListener('click', () => {
         imagePostIt.src = 'static/pink_postit.png';
