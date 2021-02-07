@@ -37,7 +37,7 @@ def home():
     
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
-    #grabs entered upload data and then storing in db.
+    #grabs entered upload data and then stores in db.
     if request.method == 'POST':
         posted_title = request.form['title']
         posted_text = request.form['text']
